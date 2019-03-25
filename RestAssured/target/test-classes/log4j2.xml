@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration package="tests" 
+               status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern=" %msg%n [%t] %d{HH:mm:ss.SSS}  %-5level  %logger{36} %n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="tests.RestAssured_92_Test" level="trace" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
